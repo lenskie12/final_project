@@ -1,0 +1,357 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+p{
+	font-weight: 300;
+	color: black;
+}
+.logo{
+	text-shadow: 2px 2px black;
+}
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(images/school.jfif);
+	background-size: cover;
+}
+.banner .content{
+	max-width: 900px;
+	text-align: center;
+}
+.banner .content h2{
+	font-size: 5em;
+	color: green;
+	text-shadow: 2px 2px black;	
+}
+.banner .content p{
+	font-size: 2em;
+	color: white;
+	text-shadow: 2px 2px black;
+}
+.btn{
+	font-size: 1.5em;
+	color: green;
+	background: lightgreen;
+	display: inline-block;
+	padding: 10px 30px;
+	margin: 20px;
+	text-transform: uppercase;
+	text-decoration:none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+.btn:hover{
+	letter-spacing: 6px;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	transition: 0.5s;
+}
+header .sticky{
+	background: white;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20 px rgba(0,0,0,0.05);
+}
+header .logo{
+	color: green;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: none;
+}
+header .sticky .logo{
+	color: lightgreen;
+}
+header .logo span{
+	color: black;
+}
+header .navigation{
+	font-size: 1.5em;
+	position: relative;
+	display: flex;
+	text-shadow: 1px 1px lightgreen;
+}
+header .navigation li{
+	list-style: none;
+	margin-left: 30px;
+}
+header .navigation li a{
+	text-decoration: none;
+	color: green;
+	font-weight: 300;
+}
+header .sticky .navigation li a{
+	code: white;
+}
+header .navigation li a:hover{
+	color: green;
+}
+section{
+	padding: 100px;
+}
+.row{
+	position:relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.row .col50{
+	position: relative;
+	width: 48%;
+}
+.titleText{
+	color: green;
+	font-size: 3em;
+	font-weight: 200;
+}
+.titleText span{
+	color: darkgreen;
+	font-weight: 700;
+	font-size: 2em;
+}
+.row .col50 .imgBx{
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+	height: 100%;
+}
+.row .col50 .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.title{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.events .content{
+	display: flex;
+	justify-content: center;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.events .content .box{
+	width: 340px;
+	margin: 20px;
+	border: 15px solid #fff;
+	box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+}
+.events .content .box .imgBx{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.events .content .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.events .content .box .text{
+	padding: 15px 0 5px;
+}
+.events .content .box .text h3{
+	font-weight: 400;
+	color: black;
+}
+.gallery .content{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 40px;
+}
+.gallery .content .box{
+	width: 250px;
+	margin: 15px;
+}
+.gallery .content .box .imgBx{
+	position: relative;
+	width: 110%;
+	height: 250px;
+}
+.gallery .content .box .imgBx img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.gallery .content .box .text{
+	padding: 15px 0 5px;
+}
+.gallery .content .box .text h3{
+	font-weight: 400;
+	color: black;
+}
+.contact{
+	background: url(images/schoolground.jpg);
+	background-size: cover;
+}
+.contactForm{
+	padding: 75px 50px;
+	background: white;
+	box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+	max-width: 500px;
+	margin-top: 50px;
+}
+.contactForm h3{
+	color: #111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+	width: 100%;
+	border: 1px solid lightgreen;
+	padding: 10px;
+	color: green;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+.contactForm .inputBox input[type="submit"]
+{
+	font-size: 1em;
+	color: black;
+	background: green;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+@media(max-width: 991px){
+	header,
+	header .sticky{
+		padding: 10px 20px;
+	}
+	header .navigation{
+		display: none;
+	}
+	header .navigation.active{
+		width: 100%;
+		height: calc(100% - 68px);
+		position: fixed;
+		top: 68px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: lightgreen;
+	}
+	header .navigation li{
+		margin-left: 0;
+	}
+	header .navigation li a{
+		text-decoration: none;
+		color: black;
+		font-size: 1.6em;
+		font-weight: 300;
+	}
+	.menuToggle{
+		position: relative;
+		width:34px;
+		height: 30px;
+		background: url(images/menu.png);
+		background-size: 30px;
+		background-repeat: no-repeate;
+		background-position: center;
+		cursor: pointer;
+	}
+	.menuToggle.active{
+		background: url(images/exit.png);
+		background-size: 30px;
+		background-repeat: no-repeate;
+		background-position: center;
+		cursor: pointer;	
+	}
+	header. sticky .menuToggle{
+		filter: invert(1);
+	}
+	section{
+		padding: 20px;
+	}
+	.banner .content h2{
+		font-size: 3em;
+		color: darkgreen;
+	}
+	.row{
+		flex-direction: column;
+	}
+	.row .col50{
+		position: relative;
+		width: 100%;
+	}
+	.row .col50 .imgBx{
+		height: 300px;
+		margin-top: 20px;
+	}
+	.events .content{
+		margin-top: 20px;
+	}
+	.events .content .box{
+		margin: 10px;
+	}
+	.events .content .box .imgBx{
+		height: 260px;
+	}
+	.title{
+		text-align: center;
+	}
+	.titleText{
+		font-size: 1.8em;
+		line-height: 1.5em;
+		margin-bottom: 15px;
+		font-weight: 300;
+		text-shadow: 2px 2px black;
+	}
+	.contactForm{
+		padding: 35px 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+@media(max-width: 480px){
+	.banner .content h2 {
+		font-size: 2.2em;
+		color: lightgreen;
+	}
+}
